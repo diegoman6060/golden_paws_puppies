@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Puppy | Puppy Breeder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css.style.css">
+    <style>
+        /* Simple from styling */
+        form {
+            max-width: 600px;
+            margin: 50px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px
+            rgba(0,0,0,0.1);
+        }
+        form lable {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        form input, form select, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        form button {
+            padding: 12px 25px;
+            background-color: #ff7f50;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #ff6347;
+        }
+        .successMsg {
+            text-align: center;
+            font-size: 16px;
+            color: green;
+            margin-top: 15px;
+        }
+
+    </style>
+</head>
+<body>
+
+     <!-- Header / Navigation -->
+     <header>
+        <div class="logo">
+            <h1>Golden Paws Kennel</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a>
+                    <li><a href="dogs.html">Our Dogs</a></li>
+                    <li><a href="puppies.html">Puppies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="order.html"
+                         class="active">Order Available Dogs</a></li>
+            </ul>
+        </nav>
+     </header>
+
+     <!-- Hero Section -->
+      <section id="hero"
+      style="background-color: #ffece0;
+      padding: 100px 50px; text-align: center;">
+      <h2>Reserve Your Puppy</h2>
+      <p>Fill the form below and we'll
+        contact you to complete your reservation.
+      </p>
+      </section>
+
+      <!-- Order Form -->
+       <section id="oder-form">
+        <form id="puppyForm">
+            <lable for="name">Full Name *</lable>
+            <input type="text" id="name"
+            name="name" placeholder="Your full name"
+            required>
+
+               <lable for="email">Email *</lable>
+            <input type="email" id="email"
+            name="email" placeholder="example@email.com"
+            required>
+
+               <lable for="phone">Phone Number *</lable>
+            <input type="tel" id="name"
+            name="phone" placeholder="phone number"
+            required>
+
+             <lable for="puppy">Select Puppy *</lable>
+            <select>Choose puppy
+              <option value="">--Choose a puppy--</option>
+              <option value="French Bulldog">French Bulldog</option>
+              <option value="Labrador Retriever">Labrador Retriever</option>
+              <option value="Golden Retriever">Golden Retriever</option>
+              <option value="German Shepherd">German Shepherd</option>
+              <option value="Poodle">Poodle</option>
+              <option value="Beagle">Beagle</option>
+               <option value="Chihuahuas">Chihuahuas</option>
+                <option value="Pitbull">Pitbull</option>
+            </select>
+            
+
+            <label for="message">Additional Message</label>
+            <textarea id="message"
+            name="message" placeholder="Any special request
+            or questions..." rows="4"></textarea>
+
+            <button type="submit">Submit Reservation</button>
+            <p id="successMsg"></p>
+        </form>
+       </section>
+
+       <!-- Form Script -->
+        <script>
+            const form =
+            document.getElementById('puppyForm');
+            const successMsg =
+            document.getElementById('successMsg');
+
+            form.addEventListerner('submit',
+        function(e) {
+            e.preventDefault();
+
+            // Basic validation (already required in HTML)
+            const name =
+            form.name.value.trim();
+            const email = 
+            form.email.value.trim();
+            const phone = 
+            form.phone.value.trim();
+            const puppy = form.puppy.value;
+
+            if (!name || !email || !phone || !puppy) {
+                successMsg.style.color = 'red';
+                successMsg.textContent = "Please fill all required fields!";
+                       return;
+            }
+
+            // Here you can contact to backend / email later
+            successMsg.style.color = 'green';
+            successMsg.textContent = `Thank you, 
+            ${name}! Your reservation for $
+            {puppy} has been recieved.`;
+
+            // Reset form
+            form.reset();
+
+        }
+            );
+        </script>
+
+         <!-- Footer -->
+         <footer>
+            <div class="footer-top">
+                <div class="contact">
+                    <h4>Contact Us</h4>
+                    <P>Email:
+                        info@goldenpawspuppy.com</P>
+                        <P>phone +1 234 567 8901</P>
+                                         <a 
+        href="mailto:info@puppybreeder.com">
+        <i class="fa-solid fa-envelope"></i>
+        info@goldenpawspuppy.com   
+        </a> </p>
+          <p>
+        <a href="tell:+12345678901">
+            <i class="fa-solid fa-phone"></i> +1(234) 567-8901
+        </a></p>
+            </div>
+            <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a
+                href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="dogs.html">Order Available Dogs</a></li>
+                <li><a href="puppies.html">Puppies</a></li>
+                <li><a href="order.html"
+                    class="active">Order Avaliable Dogs</a>
+                </li>
+            </ul>
+            </div>
+             <div class="social">
+                <h4>Follow Us</h4>
+                <a href="#">Instagram</a> | <a
+                href="#">Facebook</a> | <a
+                href="#">Tiktok</a>
+
+                <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+         <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-buttom">
+            <p>&copy; 2026 Golden Paws Puppy. All
+                Rights Reserved  </p>
+        </div>
+         </footer>
+</body>
+</html>

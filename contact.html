@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Puppy Breeder</title>
+
+    <!-- Main CSS -->
+     <link rel="stylesheet"
+     href="style.css">
+     <link rel="stylesheet"
+     href="css.style.css">
+
+     <!-- Google Font (Premium look) -->
+      <link 
+      href="https:/fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet">
+      <meta name="description"
+      content="Contact | Puppy Breeder for puppy availability, pricing,
+      orders and support."/>
+      <style>
+        .trust-row{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 14px; margin-top: 26px;
+        }
+        .trust{
+            background: rgba(255,255,255,.04);
+            border: 1px solid var(--line);
+            border-radius: 18px;
+            padding: 16px; text-align: left;
+        }
+        .trust b {
+            display: block; margin-bottom: 6px;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        .label{text-align: center;} 
+        .value{text-align: center;}   
+        .pill{text-align: center;}
+        .font-grid{text-align: center;}
+        .font-items{text-align: center;}
+        .card{text-align: center;
+        }
+        .Highlights{text-align: center;}
+        .a{color: blue;
+            background: #ffece0;
+           text-underline-offset: inherit;
+        }
+        
+      
+      </style>
+</head>
+<body>
+
+     <!-- Header / Navigation -->
+     <header>
+        <div class="logo">
+            <h1>Golden Paws Kennel</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="dogs.html">Our dogs</a></li>
+                <li><a href="puppies.html">puppies</a></li>
+                <li><a href="order.html">Available Dogs</a></li>
+                <li><a href="contact.html"
+                    class="active">Contact</a></li>
+
+            </ul>
+        </nav>
+     </header>
+
+      <!-- Hero Section -->
+      <section id="hero"
+      style="background-color: #ffece0;
+      padding: 100px 50px; text-align: center;">
+      <h2>Get in touch</h2>
+      <P>Ask about puppy availability, pricing, pickup,
+        delivery or general support. We keep responses fast,
+        clear and professional.</P>
+
+        <div class="trust-row"
+        arial-lable="Trust signals">
+        <div class="trust">
+            <b>Fast replies</b>
+            <span>Usually within 24 hours.</span>
+        </div>
+        <div class="trust">
+            <b>Verified contact</b>
+            <span>Email and phone listed below.</span>
+        </div>
+        <div class="trust">
+            <b>Business hours</b>
+            <span>Mon - Sat, 9 AM - 6 PM.</span>
+        </div>
+        <div class="trust">
+            <b>Secure process</b>
+            <span>Clear inquiries and order steps.</span>
+        </div>
+    </div>
+      </section>
+
+      <main class="grid">
+        <section class="card"
+        arial-labelledby="fonm-title">
+        <h2 class="Section-title"
+        id="form-title">Send a message</h2>
+
+        <form action="#"
+        method="post">
+                 <div>
+                    <lable for="topic">Topic *</lable>
+                    <section id="topic" name="topic" required >
+                        <option
+                        value="">Select one</option>
+                        <option>Puppy Availability</option>
+                        <option>Pricing</option>
+                        <option>Pickup / Delivery</option>
+                        <option>Order Status</option>
+                        <option>Other</option>
+                    </section>
+                 </div>
+             </div>
+
+             <div>
+                <label
+                for="message">Message *</label>
+                             <input type="text"
+                name="message" placeholder="Write your message here..." required>
+            </textarea>
+             </div>
+
+             <div class="sections">
+                <button class="btn" type="submit">Send Inquiry</button>
+
+            
+             </div>
+                 <a 
+                href="order.html">Go to Order page</a>
+
+             <p class="notice">By sending this form, you agree to be
+                contacted about your inquiry.</p>
+    </form>
+    </section>
+
+          <aside class="card"
+          aria-labelledby="info-title">
+          <h2 class="section-title"
+          id="info-title">Business details</h2>
+
+          <div class="info-grid">
+            <div class="info-item">
+                <span
+                class="lable">Email:</span>
+                <span class="value"><a
+                href="mailto:info@goldenpawspuppy.com">info@goldenpawspuppy.com</a></span>
+            </div>
+            <div class="info-item">
+                <span
+                class="lable">Phone:</span>
+                        <span class="value"><a
+                        href="tel:+12345678901">+1 234 567 8901</a></span>
+            </div>
+            <div class="info-item">
+                   <span 
+                   class="lable">Location:</span>
+                   <span
+                   class="value">United States</span>
+                    <div class="info-item">
+                   <span 
+                   class="lable">Hours</span>
+                     <span 
+                   class="value">Monday - Saturday,
+                9:00 AM - 6:00 PM</span>
+            </div>
+            <div class="info-item">
+              <span 
+                   class="lable">Privacy</span>
+                          <span class="value"><a
+                        href="privacy.html">Read our privacy policy</a></span>
+            </div>
+          </div>
+
+          <div class="badges"
+          aria-lable="Highlights">
+               <span
+               class="pill"><strong>premium</strong>layout</span>
+                      <span
+                      class="pill"><strong>Mobile</strong>ready</span>
+                <span
+                class="pill"><strong>Clear</strong>CTA</span>
+        </div>
+
+             <div class="map" role="img"
+             aria-label="Business location area">
+            </div>
+                  <strong>Optional map area</strong>
+                  Add your google map embed here if you 
+                  want a real location.
+          </div>
+        </div>
+        </aside>
+      </main>
+
+        <!-- Footer -->
+         <footer>
+            <div class="footer-top">
+                <div class="contact">
+                    <h4>Contact Us</h4>
+                    <P>Email:
+                        info@goldenpawspuppy.com</P>
+                        <P>phone +1 234 567 8901</P>
+                                         <a 
+        href="mailto:info@puppybreeder.com">
+        <i class="fa-solid fa-envelope"></i>
+        info@goldenpawspuppy.com   
+        </a> </p>
+          <p>
+        <a href="tell:+12345678901">
+            <i class="fa-solid fa-phone"></i> +1(234) 567-8901
+        </a></p>
+            </div>
+            <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a
+                href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="dogs.html">Order Available Dogs</a></li>
+                <li><a href="puppies.html">Puppies</a></li>
+                <li><a href="order.html"
+                    class="active">Order Avaliable Dogs</a>
+                </li>
+            </ul>
+            </div>
+             <div class="social">
+                <h4>Follow Us</h4>
+                <a href="#">Instagram</a> | <a
+                href="#">Facebook</a> | <a
+                href="#">Tiktok</a>
+
+                <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+         <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-buttom">
+            <p>&copy; 2026 Golden Paws Puppy. All
+                Rights Reserved  </p>
+                <p
+                class="small">professional puppy
+            inquiries, premium presentation, business-ready
+        contact flow</p>
+        </div>
+         </footer>
+    
+</body>
+</html>

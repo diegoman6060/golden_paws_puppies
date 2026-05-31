@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Puppies | Puppy Breeder</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="css.style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+     <header>
+        <div class="logo">
+            <h1>Golden Paws Kennel</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.htm">About Us</a>
+                    <li><a href="dogs.html">Our Dogs</a></li>
+                    <li><a href="puppies.html"
+                        class="active">Puppies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    <li><a href="order.html">Order Available Dogs</a></li>
+            </ul>
+        </nav>
+
+        <!--  SEARCH BAR -->
+          <input type="text"
+          id="searchBar" placeholder="search puppies..."
+          onkeyup="searchPuppy()">
+     </header>
+
+     <!-- Hero Section -->
+      <section id="hero"
+      style="background-color: #ffece0;
+      padding: 100px 50px; text-align: center;">
+      <h2>Available Puppies</h2>
+      <P>Choose from our healthy, 
+        family-friendly puppies ready for their new homes.</P>
+      </section>
+
+      <!-- Puppies Grid Section -->
+       <section id="puppies-grid"
+       style="padding: 80px 50px;
+       text-align: center; ">
+       <div class="puppies-grid"
+       style="display: grid;
+       grid-template-columns: repeat(4, 1fr);
+        gap: 30px; padding: 20px; @media (max-width: 992px) {
+        .puppy-grid{
+            grid-template-columns: repeat(2, 1fr);
+        } 
+    }
+        
+        @media (max-width: 600) {
+            .puppy-grid {
+                grid-template-columns: 1fr;
+            }
+        }">
+   
+       <!-- Puppy Card 1 -->
+        <div class="dog-card"
+        date-name="french bulldog"
+        date-age="6-9 weeks"
+        date-price="$3,000"
+        style="flex: 1 1 200px;
+         height: 350px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         max-width: 250px;
+        background: #fff; padding: 20px;
+        border-radius: 10px; box-shadow: 0 4px 8px
+        rgba(0,0,0,0.1);">
+            <img src="images/frnbulpup.jpg.jpeg" 
+            alt="French Bulldog "
+             style="width: 100%;
+             height: 200px;
+             object-fit: cover;
+             margin-bottom: 15px;">
+        <h3>French Bulldog</h3>
+         <p>Age: 6-9 weeks</p>
+          <p>Price: $3,000</p>
+        <a
+        href="order.html#french-bulldog"
+        class="ceta-button">Reserve Now</a>
+         <a href="bulldog-details.html?
+        breed=french-puppy"
+        class="view-more-btn">View More</a>
+        </div>
+
+         <!-- Dog Card 2 -->
+         <div class="dog-card"
+         style="flex: 1 1 200px;
+         height: 350px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+          max-width: 250px;
+         background: #fff; padding: 20px;
+         border-radius: 10px; box-shadow: 0 4px 8px
+         rgba(0,0,0,0.1);">
+         <img src="images/labradopup.jpg.jpeg"
+          alt="Labrador Retriever"
+          style="width: 100%;
+          margin-bottom: 15px;
+          height: 200px;
+          object-fit: cover;">
+          <h3>Labrador Retriever</h3>
+          <P>Price: $1,500</P>
+              <a
+        href="order.html#labrador"
+        class="ceta-button">Reserve Now</a>
+         <a href="labrador-details.html?
+        breed=retriever-puppy"
+        class="view-more-btn">View More</a>
+         </div>
+
+          <!-- Dog Card 3 -->
+          <div class="dog-card"
+          style="flex: 1 1 200px;
+           height: 350px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+           max-width: 250px;
+          background: #fff; padding: 20px;
+          border-radius: 10px; box-shadow: 0 4px 8px
+          rgba(0,0,0,0.1);">
+          <img src="images/goldpup.jpg.jpeg" 
+          alt="Golden Retriever"
+           style="width: 100%;
+           height: 200px;
+           object-fit: cover;
+           margin-bottom: 15px;">
+          <h3>Golden Retriever</h3>
+          <P>Price: $2,000</P>
+                   <a
+        href="order.html#golden-retriever"
+        class="ceta-button">Reserve Now</a>
+         <a href="retriever-details.html?
+        breed=golden-puppy"
+        class="view-more-btn">View More</a>
+          </div>
+
+           <!-- Dog Card 4 -->
+           <div class="dog-card"
+           date-name="german shepherd"
+           date-age="1 month"
+           date-price="$1,800"
+           style="flex: 1 1 200px;
+            height: 350px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+            max-width: 250px;
+           background: #fff; padding: 20px;
+           border-radius: 10px; box-shadow: 0 4px 8px
+           rgba(0,0,0,0.1);">
+           <img src="images/germpup.jpg.jpeg"
+           alt="German Shepherd"
+           style="width: 100%; 
+           height: 200px;
+           object-fit: cover;
+           margin-bottom: 15px;">
+           <h3>German Shepherd</h3>
+           <P>Age: 1 month</P> 
+           P>Price: $1,800</P>
+               <a
+        href="order.html#german-shepherd"
+        class="ceta-button">Reserve Now</a>
+         <a href="shepherd-details.html?
+        breed=german-puppy"
+        class="view-more-btn">View More</a>
+           </div> 
+
+           
+          <!-- Dog Card 5 -->
+           <div class="dog-card"
+           style="flex: 1 1 200px;
+            height: 350px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+            max-width: 250px;
+           background: #fff; padding: 20px;
+           border-radius: 10px; box-shadow: 0 4px 8px
+           rgba(0,0,0,0.1);">
+           <img src="images/poodpup.jpg.webp" alt="Poodle"
+           style="width: 100%; 
+           height: 200px;
+           object-fit: cover;
+           margin-bottom: 15px;">
+           <h3>Poodle</h3>
+           <P>Price: $1,700</P>
+              <a
+        href="order.html#poodle"
+        class="ceta-button">Reserve Now</a>
+         <a href="poodle-details.html?
+        breed=poodle-puppy"
+        class="view-more-btn">View More</a>
+           </div> 
+
+            <!-- Dog Card 6 -->
+           <div class="dog-card"
+           style="flex: 1 1 200px;
+            height: 350px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+            max-width: 250px;
+           background: #fff; padding: 20px;
+           border-radius: 10px; box-shadow: 0 4px 8px
+           rgba(0,0,0,0.1);">
+           <img src="images/beagpup.jpg.jpeg" alt="Beagle"
+           style="width: 100%;
+           height: 200px;
+           object-fit: cover; 
+           margin-bottom: 15px;">
+           <h3>Beagle</h3>
+           <P>Price: $1,400</P>
+               <a
+        href="order.html#beagle"
+        class="ceta-button">Reserve Now</a>
+         <a href="beagle-details.html?
+        breed=beagle-puppy"
+        class="view-more-btn">View More</a>
+           </div> 
+
+             <!-- Dog Card 7 -->
+           <div class="dog-card"
+           style="flex: 1 1 200px;
+            height: 350px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+            max-width: 250px;
+           background: #fff; padding: 20px;
+           border-radius: 10px; box-shadow: 0 4px 8px
+           rgba(0,0,0,0.1);">
+           <img src="images/chihuapup.jpg.jpeg" alt="Chihuahuas"
+           style="width: 100%; 
+           height: 200px;
+           object-fit: cover;
+           margin-bottom: 15px;">
+           <h3>Chihuahuas</h3>
+           <P>Price: $1,600</P>
+              <a
+        href="order.html#chihuahuas"
+        class="ceta-button">Reserve Now</a>
+         <a href="chihuahuas-details.html?
+        breed=chihuahuas-puppy"
+        class="view-more-btn">View More</a>
+           </div> 
+
+               <!-- Dog Card 8 -->
+           <div class="dog-card"
+           style="flex: 1 1 200px;
+            height: 350px;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+            max-width: 250px;
+           background: #fff; padding: 20px;
+           border-radius: 10px; box-shadow: 0 4px 8px
+           rgba(0,0,0,0.1);">
+           <img src="images/pitbull.jpg (2).jpg" 
+           alt="Pitbull"
+           style="width: 100%;
+           height: 200px;
+           object-fit: cover; 
+           margin-bottom: 15px;">
+           <h3>Pitbull</h3>
+           <P>Price: $1,700</P>
+              <a
+        href="order.html#pitbull"
+        class="ceta-button">Reserve Now</a>
+        <a href="pitbull-details.html?
+        breed=pitbull-puppy"
+        class="view-more-btn">View More</a>
+           </div>
+       </div> 
+       </section>
+
+       <section class="testimonials">
+         <h2>What Our Customers Are Saying</h2>
+         <div class="testimonial">
+            <p>"I love my new puppy! The process
+               was smooth, and they were so helpfull in 
+               finding the right match!" - Sarah J.</p>
+         </div>
+          <div class="testimonial">
+            <p>"Best experience ever! Our puppy is 
+               healthy and happy! - John D.</p>
+         </div>
+         <div class="testimonial">
+            <p>"Got my puppy safely, very healthy! - Tomme.</p>
+         </div>
+       </section>
+
+       
+     <!-- Footer -->
+         <footer>
+            <div class="footer-top">
+                <div class="contact">
+                    <h4>Contact Us</h4>
+                    <P>Email:
+                        info@goldenpawspuppy.com</P>
+                        <P>phone +1 234 567 8901</P>
+                                         <a 
+        href="mailto:info@puppybreeder.com">
+        <i class="fa-solid fa-envelope"></i>
+        info@goldenpawspuppy.com   
+        </a> </p>
+          <p>
+        <a href="tell:+12345678901">
+            <i class="fa-solid fa-phone"></i> +1(234) 567-8901
+        </a></p>
+        <a href="https://wa.me/12709831226"
+        target="_blank"
+        style="position: fixed; bottom: 20px; right: 20px;">
+        <img
+        src="https://img.icons8.com/color/48/000000/whatsapp.png"
+        style="width: 50px;">
+        </a>
+            </div>
+            <div class="quick-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a
+                href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="dogs.html">Order Available Dogs</a></li>
+                <li><a href="puppies.html"
+                    class="active">Puppies</a></li>
+                    <li><a href="order.html">Order Available Dogs</a></li>
+            </ul>
+            </div>
+             <div class="social">
+                <h4>Follow Us</h4>
+                <a href="#">Instagram</a> | <a
+                href="#">Facebook</a> | <a
+                href="#">Tiktok</a>
+
+                <div class="social">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+         <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-buttom">
+            <p>&copy; 2026 Golden Paws Puppy. All
+                Rights Reserved  </p>
+        </div>
+         </footer> 
+
+         <style>
+            .ceta-button{
+                 display: inline-block;
+    padding: 12px 30px;
+    background-color: greenyellow;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+            }
+
+            .cta-button:hover {
+    background-color: #e05500;
+}
+
+         </style>
+
+         <script>
+            const searchBar = 
+            document.getElementById('searchBar');
+            const puppies = 
+            document.querySelectorAll(".dog-card");
+            const noResult = 
+            document.getElementById("noResult");
+
+            searchBar.addEventListener("keyup",
+                function() {
+                    let value = 
+                    searchBar.value.toLowerCase();
+                    let found = false;
+
+                    puppies.forEach(function (puppy) {
+                        let name = puppy.dataset.name;
+                        let age = puppy.dataset.age;
+                        let price = puppy.dataset.price;
+
+                        if (
+                            name.includes(value) ||
+                             age.includes(value) ||
+                              price.includes(value)
+                        ) {
+                            puppy.style.display = "block";
+                            found = true;
+                        } else {
+                            puppy.style.display = "none"
+                        }
+                    }
+                
+            )
+
+            // show "no result"
+            if (!found) {
+                noResult.style.display = "block";
+            } else {
+                noResult.style.display = "none";
+            }
+        });
+         </script>
+    
+</body>
+</html>
